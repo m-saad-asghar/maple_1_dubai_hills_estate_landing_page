@@ -25,9 +25,17 @@ export default function Map() {
                             
             </div>
 
-            <div className="map_background">
-
-            </div>
+           <div className="map_container">
+      <iframe
+        src="https://www.google.com/maps?q=25.0950278,55.2544167&hl=en&z=15&output=embed"
+        width="100%"
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        // loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
 
             <div className="btn_style_map">
   <button
