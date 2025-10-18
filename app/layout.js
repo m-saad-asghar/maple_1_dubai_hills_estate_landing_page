@@ -46,7 +46,6 @@ export default function RootLayout({ children }) {
               'https://connect.facebook.net/en_US/fbevents.js');
               fbq('init', '1133346741856150');
               fbq('track', 'PageView');
-              fbq('track', 'Lead');
             `,
           }}
         />

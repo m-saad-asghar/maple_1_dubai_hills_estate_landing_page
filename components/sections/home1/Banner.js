@@ -1,5 +1,5 @@
 'use client'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ReactCurvedText from 'react-curved-text'
 import ModalVideo from 'react-modal-video'
 import React from 'react';
@@ -12,6 +12,7 @@ import toast from 'react-hot-toast';
 import PhoneInput from "react-phone-input-2";
 import { useRouter } from 'next/navigation';
 import 'react-phone-input-2/lib/style.css';
+import { useSearchParams } from 'next/navigation';
 
 const swiperOptions = {
     modules: [Autoplay, Pagination, Navigation],
@@ -35,12 +36,30 @@ export default function Banner() {
     const [isOpen, setOpen] = useState(false)
     const [keepUpdated, setKeepUpdated] = useState(true);
      const [disableBtn, setDisableBtn] = useState(false)
+      const searchParams = useSearchParams();
+  const [originValue, setOriginValue] = useState('');
     const [formData, setFormData] = useState({
     name: '',
     phone: '',
     email: '',
     // message: '',
   });
+
+   useEffect(() => {
+    const origin = searchParams.get('origin');
+
+    if (origin) {
+      if (origin.toLowerCase() === 'meta') {
+        setOriginValue('Meta');
+      } else if (origin.toLowerCase() === 'google') {
+        setOriginValue('Google Ads');
+      } else {
+        setOriginValue('');
+      }
+    } else {
+      setOriginValue('');
+    }
+  }, [searchParams]);
 
   const handleChange = (e) => {
     setFormData({
@@ -55,7 +74,9 @@ export default function Banner() {
   const payload = {
     fields: {
       TITLE: `Maple 1 Dubai Hills Estate EN Landing Page`,
+      UF_CRM_1760777561731: originValue,
       NAME: formData.name,
+      PHONE_TEXT: formData.phone,
       PHONE: [
         {
           VALUE: formData.phone,
