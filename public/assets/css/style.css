@@ -264,7 +264,7 @@ h6 {
 }
 
 .future_row {
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 .sub_heading {
@@ -322,6 +322,11 @@ padding-left: 130px !important;
     line-height: 24px !important;
     color: #ffffff;
     padding-top: 20px;
+}
+
+.amenities_container {
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .seperater {
@@ -7197,9 +7202,9 @@ Project Four Css
         margin-top: -20px;
     }
 
-    /* .future_row {
-        margin-top: 0;
-    } */
+    .future_row {
+        margin-top: 30px !important;
+    }
 
     .cont {
         padding-bottom: 0 !important;
@@ -8721,7 +8726,7 @@ Project Four Css
     }
 
     .feature_wrap {
-    padding-bottom: 40px !important;
+    padding-bottom: 0px !important;
 }
 
     .main-slider-one__single {
@@ -8751,7 +8756,7 @@ padding-left: 30px !important;
 }
 
 .about-one__content {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 .everyday_gateway {
     margin-top: 40px !important;

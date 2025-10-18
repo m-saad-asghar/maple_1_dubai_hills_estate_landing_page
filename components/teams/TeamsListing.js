@@ -21,23 +21,19 @@ export default function TeamsListing() {
   const images = [
   {
     id: 1,
-    src: "/assets/img/gallery/creek_main.jpg",
+    src: "/assets/img/gallery/maple_1_1.webp",
     alt: "Gallery Image 1",
-    link: "#home",
-    // heading: "Townhouses Starting from AED 3.2M",
-    // location: "EMAAR SOUTH"
+    link: "#home"
   },
   {
     id: 2,
-    src: "/assets/img/gallery/creek_2.jpg",
+    src: "/assets/img/gallery/maple_1_2.jpg",
     alt: "Gallery Image 2",
-    link: "#home",
-    //  heading: "Townhouses Starting from AED 2.9M",
-    //  location: "THE VALLEY"
+    link: "#home"
   },
   {
     id: 3,
-    src: "/assets/img/gallery/creek_3.jpg",
+    src: "/assets/img/gallery/maple_1_3.webp",
     alt: "Gallery Image 3",
     link: "#home",
   },

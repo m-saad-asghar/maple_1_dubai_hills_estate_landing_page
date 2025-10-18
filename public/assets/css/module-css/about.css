@@ -4,7 +4,7 @@
 .about-one {
     position: relative;
     display: block;
-    padding: 0px 0px 20px;
+    padding: 0px 0px 40px;
     z-index: 1;
 }
 
@@ -704,4 +704,13 @@
 
 .about-three .about-one__content-bottom .text {
     margin-top: 49px;
+}
+
+@media only screen and (max-width: 767px) {
+    .about-one {
+    position: relative;
+    display: block;
+    padding: 0px 0px 20px;
+    z-index: 1;
+}
 }

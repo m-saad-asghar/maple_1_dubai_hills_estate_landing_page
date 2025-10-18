@@ -135,7 +135,7 @@ export default function Banner() {
       <Swiper {...swiperOptions} className="banner-carousel owl-theme owl-carousel owl-nav-none owl-dots-none">                    
         <SwiperSlide className="swiper-slide">
           <div className="image-layer main_banner" 
-          style={{backgroundImage: 'url(assets/img/slider/emaar_img_2.jpg)'}}
+          style={{backgroundImage: 'url(assets/img/slider/maple_edited_main_image.jpg)'}}
           >
             </div>
             <div className="container banner_container_main">

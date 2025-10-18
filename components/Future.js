@@ -39,79 +39,24 @@ export default function Future() {
                                 </div>
 
                                 <div className="row future_row">
-                                
-                                                    {/* <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                                        <div className="feauture-one__single" 
-                                                        >
-                                                            <div className="feauture-one__single-text">
-                                
-                                                              <div className="feauture-one__single-bottom">
-                                                                <div className="icon-box">
-                                                                    <span className="icon-plane">
-                                <FaBuilding className="icon-plane" size={30}/> 
-                                                                    </span>
-                                                                    
-                                                                </div>
-                                                            </div>
-
-                                <h3 className="investment_content">
-<span className="investment_content_para">711,399 sqm</span></h3>
-                                
-                                <p className="investment_text">
-    <span className="about_paragraph_span">Serviced Apartments.</span>
-</p>
-                                                            </div>
-                                                        </div>
-                                                    </div> */}
-                                                  {/* <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                                        <div className="feauture-one__single" 
-                                                        >
-                                                            <div className="feauture-one__single-text">
-                                
-                                                              <div className="feauture-one__single-bottom">
-                                                                <div className="icon-box">
-                                                                    <span className="icon-plane">
-                                <FaCity className="icon-plane" size={30}/> 
-                                                                    </span>
-                                                                    
-                                                                </div>
-                                                            </div>
-
-                                <h3 className="investment_content">
-<span className="investment_content_para">7.4 million sqm</span></h3>
-                            
-                                <p className="investment_text">
-    <span className="about_paragraph_span">Residential Space.</span>
-</p>
-                                                            </div>
-                                                        </div>
-                                                    </div> */}
-                                
-                                                     {/* <div className="col-6 col-sm-6 col-md-6 col-lg-4 col-xl-4 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
-                                                        <div className="feauture-one__single" 
-                                                        >
-                                                            <div className="feauture-one__single-text">
-                                
-                                                              <div className="feauture-one__single-bottom">
-                                                                <div className="icon-box">
-                                                                    <span className="icon-plane">
-                                <FaTree className="icon-plane" size={30}/> 
-                                                                    </span>
-                                                                    
-                                                                </div>
-                                                            </div>
-
-<h3 className="investment_content">
-<span className="investment_content_para">500,000 sqm</span></h3>
-                                
-                                <p className="investment_text">
-    <span className="about_paragraph_span">Parks & Open Spaces.</span>
-</p>
-                                                            </div>
-                                                        </div>
-                                                    </div> */}
+                                                  
                                 
                                                 </div>
+
+                                            <div className="amenities_container">
+  <Image
+    src="/assets/img/exceptional_image.jpg"
+    alt="Amenities Image"
+    width={1920} // can be any large width
+    height={1080}
+    style={{
+      width: "100%",
+      height: "auto",
+      objectFit: "cover",
+    }}
+  />
+</div>
+
                             </div>
                         </div>
 
