@@ -21,19 +21,19 @@ export default function TeamsListing() {
   const images = [
   {
     id: 1,
-    src: "/assets/img/gallery/maple_1_1.webp",
+    src: "/assets/img/gallery/lifestyle_1.webp",
     alt: "Gallery Image 1",
     link: "#home"
   },
   {
     id: 2,
-    src: "/assets/img/gallery/maple_1_2.jpg",
+    src: "/assets/img/gallery/lifestyle_2.jpg",
     alt: "Gallery Image 2",
     link: "#home"
   },
   {
     id: 3,
-    src: "/assets/img/gallery/maple_1_3.webp",
+    src: "/assets/img/gallery/lifestyle_3.jpg",
     alt: "Gallery Image 3",
     link: "#home",
   },

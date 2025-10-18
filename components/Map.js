@@ -20,7 +20,7 @@ export default function Map() {
                                     </p>
                                 </div>
                 <div className="sec-title" style={{marginTop: 15, paddingBottom: 0}}>
-                                    <h2 className="why_invest">MAPLE 1 MAP</h2>
+                                    <h2 className="why_invest">Location MAP</h2>
                                 </div>
                             
             </div>

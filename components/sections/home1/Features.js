@@ -14,7 +14,9 @@ import {
   FaKey,               // Vacant
   FaCouch,             // Unfurnished
   FaExpandArrowsAlt,   // Spacious
-  FaCar                // Parking
+  FaCar,                // Parking
+  FaFlagCheckered,
+  FaBuilding
 } from "react-icons/fa";
 
 
@@ -133,10 +135,10 @@ export default function Features() {
                     <div className="feauture-one__single-text">
                       <div className="feauture-one__single-bottom">
                         <div className="icon-box">
-                          <span className="icon-plane"><FaChartLine size={30}/></span>
+                          <span className="icon-plane"><FaBuilding size={30}/></span>
                         </div>
                       </div>
-                      <h2 className="investment_content"><a href="javascript:void(0);">End</a></h2>
+                      <h2 className="investment_content"><a href="javascript:void(0);">End Unit</a></h2>
                       <p className="investment_text"><span className="about_para_span"></span></p>
                     </div>
                   </div>
@@ -151,7 +153,7 @@ export default function Features() {
                         </div>
                       </div>
                       <h2 className="investment_content"><a href="javascript:void(0);">Vacant</a></h2>
-                      <p className="investment_text"><span className="about_para_span"></span></p>
+                      <p className="investment_text"><span className="about_para_span">& Ready to move-in</span></p>
                     </div>
                   </div>
                 </div>
@@ -165,7 +167,7 @@ export default function Features() {
                         </div>
                       </div>
                       <h2 className="investment_content"><a href="javascript:void(0);">Unfurnished</a></h2>
-                      <p className="investment_text"><span className="about_para_span"></span></p>
+                      <p className="investment_text"><span className="about_para_span">Villa</span></p>
                     </div>
                   </div>
                 </div>
@@ -179,7 +181,7 @@ export default function Features() {
                         </div>
                       </div>
                       <h2 className="investment_content"><a href="javascript:void(0);">Spacious</a></h2>
-                      <p className="investment_text"><span className="about_para_span"></span></p>
+                      <p className="investment_text"><span className="about_para_span">Layout</span></p>
                     </div>
                   </div>
                 </div>

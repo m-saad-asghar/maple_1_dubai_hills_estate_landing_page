@@ -158,10 +158,10 @@ export default function Banner() {
         <div className='banner_text_container'>
           <p className='heading_middle heading'>MAPLE 1, DUBAI HILLS ESTATE</p>
           <h1 className="heading_middle sub_heading">
-  RARE 5 BEDROOM <span className="line-break">CORNER VILLA</span>
+  RARE BRAND-NEW 5-BEDROOM <span className="line-break">CORNER VILLA</span>
 </h1>
 
-        <p className='heading_middle content'>(RARE DEAL – PRICE DROP)</p>
+        <p className='heading_middle content'>RARE DEAL – PRICE DROP</p>
         </div>
 
         <div className="btn-box">

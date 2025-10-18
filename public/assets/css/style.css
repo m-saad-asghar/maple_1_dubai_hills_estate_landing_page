@@ -318,8 +318,8 @@ padding-left: 130px !important;
 .content {
     font-family: 'LatoLight', sans-serif !important;
     font-weight: 300 !important;
-    font-size: 16px !important;
-    line-height: 24px !important;
+    font-size: 44px !important;
+    line-height: 58px !important;
     color: #ffffff;
     padding-top: 20px;
 }
@@ -8655,6 +8655,11 @@ Project Four Css
     }
 
     .sub_heading {
+    font-size: 30px !important;
+    line-height: 38px !important;
+}
+
+ .content {
     font-size: 30px !important;
     line-height: 38px !important;
 }
