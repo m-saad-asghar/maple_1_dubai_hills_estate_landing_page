@@ -40,7 +40,7 @@ export default function Features() {
               <div className="text-box">
                 <p className="about_paragraph">
                   <span className="about_paragraph_span">
-                    Discover a rare brand-new 5-bedroom corner villa in Dubai Hills Estate, offering refined design, spacious interiors, and private outdoor living. 
+                    Discover a <span className="font_bold">rare brand-new 5-bedroom corner villa</span> in Dubai Hills Estate, offering refined design, spacious interiors, and private outdoor living. 
                     Surrounded by parks and premium amenities, this exclusive home combines elegance, comfort, and value — now available at a newly reduced price.
                   </span>
                 </p>

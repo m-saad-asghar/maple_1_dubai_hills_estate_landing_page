@@ -21,7 +21,7 @@ export default function TeamsListing() {
   const images = [
   {
     id: 1,
-    src: "/assets/img/gallery/lifestyle_1.jpg",
+    src: "/assets/img/gallery/lifestyl_1.webp",
     alt: "Gallery Image 1",
     link: "#home"
   },

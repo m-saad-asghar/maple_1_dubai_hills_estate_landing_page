@@ -267,6 +267,11 @@ h6 {
     margin-top: 100px;
 }
 
+.font_bold {
+     font-weight: bold !important;
+     display: inline !important;
+}
+
 .sub_heading {
     text-transform: initial !important;
     font-family: 'Optima', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif !important;
@@ -8657,7 +8662,7 @@ Project Four Css
     .sub_heading {
     font-size: 30px !important;
     line-height: 38px !important;
-    font-weight: 600;
+    font-weight: 900;
 }
 
  .content {
