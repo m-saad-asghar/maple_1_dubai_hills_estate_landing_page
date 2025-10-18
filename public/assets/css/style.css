@@ -2063,7 +2063,7 @@ Feauture One
     line-height: 28px !important;
     text-transform: initial !important;
         margin-top: 15px;
-        margin-bottom: 15px !important;
+        /* margin-bottom: 15px !important; */
     /* color: #0b4a35;
     font-size: 19px !important;
     font-weight: 500 !important;
@@ -8657,6 +8657,7 @@ Project Four Css
     .sub_heading {
     font-size: 30px !important;
     line-height: 38px !important;
+    font-weight: 600;
 }
 
  .content {

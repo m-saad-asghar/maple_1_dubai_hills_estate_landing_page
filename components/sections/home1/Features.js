@@ -16,7 +16,9 @@ import {
   FaExpandArrowsAlt,   // Spacious
   FaCar,                // Parking
   FaFlagCheckered,
-  FaBuilding
+  FaBuilding,
+  FaBorderAll,
+  FaFlag
 } from "react-icons/fa";
 
 
@@ -32,13 +34,13 @@ export default function Features() {
                 </p>
               </div>
               <div className="sec-title" style={{marginTop: 15, paddingBottom: 0}}>
-                <h2 className="why_invest">EXCLUSIVE & RARE VILLA — GRAB THE <span className="line-break">PRICE DROP</span></h2>
+                <h2 className="why_invest">EXCLUSIVE & RARE VILLA — GRAB THE PRICE DROP</h2>
               </div>
 
               <div className="text-box">
                 <p className="about_paragraph">
                   <span className="about_paragraph_span">
-                    Discover a rare 5-bedroom corner villa in Dubai Hills Estate, offering refined design, spacious interiors, and private outdoor living. 
+                    Discover a rare brand-new 5-bedroom corner villa in Dubai Hills Estate, offering refined design, spacious interiors, and private outdoor living. 
                     Surrounded by parks and premium amenities, this exclusive home combines elegance, comfort, and value — now available at a newly reduced price.
                   </span>
                 </p>
@@ -65,7 +67,7 @@ export default function Features() {
                     <div className="feauture-one__single-text">
                       <div className="feauture-one__single-bottom">
                         <div className="icon-box">
-                          <span className="icon-plane"><FaWarehouse size={30}/></span>
+                          <span className="icon-plane"><FaBorderAll size={30}/></span>
                         </div>
                       </div>
                       <h2 className="investment_content"><a href="javascript:void(0);">BUA</a></h2>
@@ -135,11 +137,11 @@ export default function Features() {
                     <div className="feauture-one__single-text">
                       <div className="feauture-one__single-bottom">
                         <div className="icon-box">
-                          <span className="icon-plane"><FaBuilding size={30}/></span>
+                          <span className="icon-plane"><FaFlagCheckered size={30}/></span>
                         </div>
                       </div>
-                      <h2 className="investment_content"><a href="javascript:void(0);">End Unit</a></h2>
-                      <p className="investment_text"><span className="about_para_span"></span></p>
+                      <h2 className="investment_content"><a href="javascript:void(0);">End</a></h2>
+                      <p className="investment_text"><span className="about_para_span">Unit</span></p>
                     </div>
                   </div>
                 </div>
