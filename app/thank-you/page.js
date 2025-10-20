@@ -22,7 +22,7 @@ export default function ThankYou() {
 
     // redirect after 5 seconds
     const redirectTimer = setTimeout(() => {
-      router.push('/');
+      router.back();
     }, 4000);
 
     return () => {
