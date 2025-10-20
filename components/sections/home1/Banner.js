@@ -75,15 +75,19 @@ export default function Banner() {
   if (!formData.phone) {
     setPhoneError("Phone number is required");
     return;
-} else if (formData.phone.length < 8 || formData.phone.length > 15) {
-  setPhoneError("Phone number must be between 8 and 15 characters");
+} else if (formData.phone.length < 11 || formData.phone.length > 13) {
+  setPhoneError("Phone number must be between 11 and 13 characters");
   return;
 }else{
   setPhoneError("");
 }
 
+
  let phone = formData.phone.replace(/^(\d{1,3})0/, '$1');
  formData.phone = phone
+
+ console.log("form data", formData.phone)
+  return;
 
   const payload = {
     fields: {
