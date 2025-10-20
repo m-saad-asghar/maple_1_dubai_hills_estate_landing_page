@@ -29,7 +29,7 @@ export default function Footer1() {
 
                                     <div className="footer-widget__about-inner footer_spacing">
                                         <div className="text-box centerize">
-                                            <p style={{color: "#ffffff"}}>Office No. 2101, 21st Floor, Boulevard Plaza Tower 1,  
+                                            <p style={{color: "#ffffff"}} className="office_address">Office No. 2101, 21st Floor, Boulevard Plaza Tower 1,  
                                                  Downtown, Dubai, UAE</p>
                                         </div>
                                         <div className="contact-box centerize">

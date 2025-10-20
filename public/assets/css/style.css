@@ -8636,6 +8636,10 @@ Project Four Css
 
 @media only screen and (max-width: 767px) {
 
+    .office_address {
+        text-align: center;
+    }
+
     .line-break {
     display: block;
   }
