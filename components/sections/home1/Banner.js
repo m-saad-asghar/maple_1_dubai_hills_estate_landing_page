@@ -38,6 +38,7 @@ export default function Banner() {
      const [disableBtn, setDisableBtn] = useState(false)
       const searchParams = useSearchParams();
   const [originValue, setOriginValue] = useState('');
+  const [phoneError, setPhoneError] = useState('')
     const [formData, setFormData] = useState({
     name: '',
     phone: '',
@@ -70,6 +71,19 @@ export default function Banner() {
 
    const handleSubmit = async (e) => {
   e.preventDefault();
+
+  if (!formData.phone) {
+    setPhoneError("Phone number is required");
+    return;
+} else if (formData.phone.length < 8 || formData.phone.length > 15) {
+  setPhoneError("Phone number must be between 8 and 15 characters");
+  return;
+}else{
+  setPhoneError("");
+}
+
+ let phone = formData.phone.replace(/^(\d{1,3})0/, '$1');
+ formData.phone = phone
 
   const payload = {
     fields: {
@@ -284,6 +298,7 @@ export default function Banner() {
     height: "50px",
   }}
 />
+<p className='error_msg'>{phoneError}</p>
 
         {/* <input
           type="tel"
