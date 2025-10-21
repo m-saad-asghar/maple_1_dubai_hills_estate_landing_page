@@ -90,7 +90,7 @@ export default function ThankYou() {
     {/* ✅ Google Analytics Event Script */}
       <Script id="lead-submission-maple1" strategy="afterInteractive">
         {`
-          gtag('event', 'lead_submission', {
+          gtag('event', 'lead_submission_maple1_en', {
             lead_language: 'english',
             project_name: 'maple_1_dubai_hills',
             landing_page: 'maple1_en'
