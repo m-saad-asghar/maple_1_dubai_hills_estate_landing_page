@@ -260,6 +260,9 @@ export default function Banner() {
           value={formData.name}
           onChange={handleChange}
           required
+          autoComplete="off"
+  autoCorrect="off"
+  spellCheck="false"
         />
       </div>
 
@@ -275,6 +278,9 @@ export default function Banner() {
           value={formData.email}
           onChange={handleChange}
           required
+          autoComplete="off"
+  autoCorrect="off"
+  spellCheck="false"
         />
       </div>
 
