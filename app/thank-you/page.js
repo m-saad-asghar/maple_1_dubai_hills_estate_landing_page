@@ -32,6 +32,17 @@ export default function ThankYou() {
   }, [router]);
 
   return (
+   <>
+   {/* ✅ Google Analytics Event Script */}
+      <Script id="lead-submission-maple1" strategy="afterInteractive">
+        {`
+          gtag('event', 'lead_submission', {
+            lead_language: 'english',
+            project_name: 'maple_1_dubai_hills',
+            landing_page: 'maple1_en'
+          });
+        `}
+      </Script>
     <div
       style={{
         display: 'flex',
@@ -85,5 +96,6 @@ export default function ThankYou() {
         </div>
       </div>
     </div>
+   </>
   );
 }
