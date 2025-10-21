@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { FaCheckCircle } from 'react-icons/fa';
+import Script from 'next/script';
 
 export default function ThankYou() {
   const router = useRouter();
