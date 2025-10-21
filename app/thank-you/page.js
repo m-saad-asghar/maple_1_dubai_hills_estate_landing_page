@@ -88,12 +88,14 @@ export default function ThankYou() {
       </div>
     </div>
     {/* ✅ Google Analytics Event Script */}
-      <Script id="lead-submission-maple" strategy="afterInteractive">
+    <Script id="lead-submission-maple1-en" strategy="afterInteractive">
       {`
-        gtag('event', 'lead_submission_maple1_en', {
+        window.gtag('event', 'lead_submission_maple1_en', {
           lead_language: 'english',
           project_name: 'maple_1_dubai_hills',
-          landing_page: 'maple1_en'
+          landing_page: 'maple1_en',
+          currency: 'AED',
+          value: 200
         });
       `}
     </Script>
