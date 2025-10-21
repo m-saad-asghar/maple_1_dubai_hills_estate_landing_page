@@ -31,12 +31,6 @@ export default function ThankYou() {
     };
   }, [router]);
 
-   useEffect(() => {
-    if (window.fbq) {
-      window.fbq("track", "Lead");
-    }
-  }, []);
-
   return (
     <div
       style={{

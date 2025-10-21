@@ -86,8 +86,7 @@ export default function Banner() {
  let phone = formData.phone.replace(/^(\d{1,3})0/, '$1');
  formData.phone = phone
 
- console.log("form data", formData.phone)
-  return;
+
 
   const payload = {
     fields: {
