@@ -75,8 +75,8 @@ export default function Banner() {
   if (!formData.phone) {
     setPhoneError("Phone number is required");
     return;
-} else if (formData.phone.length < 11 || formData.phone.length > 13) {
-  setPhoneError("Phone number must be between 11 and 13 characters");
+} else if (formData.phone.length < 9 || formData.phone.length > 15) {
+  setPhoneError("Phone number must be between 9 and 15 characters");
   return;
 }else{
   setPhoneError("");
