@@ -32,11 +32,15 @@ export default function ThankYou() {
     };
   }, [router]);
 
-  useEffect(() => {
-    if (window.fbq) {
-      window.fbq("track", "Lead");
-    }
-  }, []);
+ useEffect(() => {
+  if (window.fbq) {
+    window.fbq("track", "Lead", {
+      value: 1.00,
+      currency: "USD",
+      content_name: "Maple 1 Dubai Hills Estate"
+    });
+  }
+}, []);
 
   return (
    <>
