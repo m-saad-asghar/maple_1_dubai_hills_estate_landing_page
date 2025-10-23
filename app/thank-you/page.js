@@ -35,10 +35,10 @@ export default function ThankYou() {
  useEffect(() => {
   if (window.fbq) {
     window.fbq("track", "Lead", {
-      value: 1.00,
-      currency: "USD",
-      content_name: "Maple 1 Dubai Hills Estate"
-    });
+  value: 1.00,
+  currency: "AED",
+  content_name: "Maple 1 Dubai Hills Estate"
+});
   }
 }, []);
 
