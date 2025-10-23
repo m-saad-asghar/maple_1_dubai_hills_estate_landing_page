@@ -98,14 +98,14 @@ export default function Banner() {
  let phone = formData.phone.replace(/^(\d{1,3})0/, '$1');
  formData.phone = phone
 
-  // const payload_email = {
-  //   LANDING_PAGE: "Maple 1 Dubai Hills Estate EN Landing Page",
-  //   ORIGIN: originValue,
-  //   COUNTRY: countryValue,
-  //   NAME: formData.name,
-  //   PHONE_TEXT: formData.phone,
-  //   EMAIL: formData.email,
-  // };
+  const payload_email = {
+    LANDING_PAGE: "Maple 1 Dubai Hills Estate EN Landing Page",
+    ORIGIN: originValue,
+    COUNTRY: countryValue,
+    NAME: formData.name,
+    PHONE_TEXT: formData.phone,
+    EMAIL: formData.email,
+  };
 
 
 
@@ -138,6 +138,21 @@ export default function Banner() {
     },
   };
 
+  async function sendLeadEmail() {
+  try {
+    const res = await fetch("/api/send-email", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload_email),
+    });
+
+    const data = await res.json();
+    console.log("Email sent:", data);
+  } catch (err) {
+    console.error("Error sending email:", err);
+  }
+}
+
   try {
     setDisableBtn(true);
     const response = await fetch(
@@ -162,6 +177,7 @@ export default function Banner() {
         email: "",
         message: "",
       });
+      await sendLeadEmail();
     } else {
       setDisableBtn(false);
       toast.error(

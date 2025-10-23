@@ -5,17 +5,18 @@ export async function POST(request) {
   try {
     const body = await request.json();
     // Expected fields: LANDING_PAGE, ORIGIN, NAME, PHONE_TEXT, EMAIL
-    const { LANDING_PAGE, ORIGIN, NAME, PHONE_TEXT, EMAIL } = body;
+    const { LANDING_PAGE, ORIGIN, COUNTRY, NAME, PHONE_TEXT, EMAIL } = body;
 
     // Build email content (HTML and plain text)
     const subject = `New Lead from ${LANDING_PAGE}`;
     const text = `
 New lead received:
 Landing Page: ${LANDING_PAGE}
-Origin: ${ORIGIN || "-"}
 Name: ${NAME || "-"}
 Phone: ${PHONE_TEXT || "-"}
 Email: ${EMAIL || "-"}
+Origin: ${ORIGIN || "-"}
+Country: ${COUNTRY || "-"}
     `.trim();
 
     const html = `
@@ -26,6 +27,8 @@ Email: ${EMAIL || "-"}
         <tr><td><strong>Name:</strong></td><td>${NAME || "-"}</td></tr>
         <tr><td><strong>Phone:</strong></td><td>${PHONE_TEXT || "-"}</td></tr>
         <tr><td><strong>Email:</strong></td><td>${EMAIL || "-"}</td></tr>
+         <tr><td><strong>Origin:</strong></td><td>${ORIGIN || "-"}</td></tr>
+          <tr><td><strong>Country:</strong></td><td>${COUNTRY || "-"}</td></tr>
       </table>
     `;
 
