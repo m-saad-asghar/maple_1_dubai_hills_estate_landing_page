@@ -38,6 +38,7 @@ export default function Banner() {
      const [disableBtn, setDisableBtn] = useState(false)
       const searchParams = useSearchParams();
   const [originValue, setOriginValue] = useState('');
+  const [countryValue, setCountryValue] = useState('');
   const [phoneError, setPhoneError] = useState('')
     const [formData, setFormData] = useState({
     name: '',
@@ -48,6 +49,7 @@ export default function Banner() {
 
    useEffect(() => {
     const origin = searchParams.get('origin');
+    const country = searchParams.get('country');
 
     if (origin) {
       if (origin.toLowerCase() === 'meta') {
@@ -59,6 +61,16 @@ export default function Banner() {
       }
     } else {
       setOriginValue('');
+    }
+
+    if (country) {
+  const formattedCountry = country
+    .replace(/_/g, ' ')
+    .toLowerCase()
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+  setCountryValue(formattedCountry);
+} else {
+      setCountryValue('');
     }
   }, [searchParams]);
 
@@ -86,6 +98,15 @@ export default function Banner() {
  let phone = formData.phone.replace(/^(\d{1,3})0/, '$1');
  formData.phone = phone
 
+  // const payload_email = {
+  //   LANDING_PAGE: "Maple 1 Dubai Hills Estate EN Landing Page",
+  //   ORIGIN: originValue,
+  //   COUNTRY: countryValue,
+  //   NAME: formData.name,
+  //   PHONE_TEXT: formData.phone,
+  //   EMAIL: formData.email,
+  // };
+
 
 
   const payload = {
@@ -110,6 +131,7 @@ export default function Banner() {
       SOURCE_ID: "WEB",
       ASSIGNED_BY_ID: 25,
       UF_CRM_1754652292782: "Maple 1 Dubai Hills Estate EN Landing Page",
+      UF_CRM_1761206533: countryValue,
     },
     params: {
       REGISTER_SONET_EVENT: "Y",
@@ -134,12 +156,6 @@ export default function Banner() {
 
     if (result.result) {
       router.push('/thank-you');
-//       toast.success(
-//   "Thank you for reaching out. Your inquiry has been received and we will contact you soon.",
-//   {
-//     duration: 5000, 
-//   }
-// );
       setFormData({
         name: "",
         phone: "",
